@@ -1,12 +1,6 @@
 # Laravel Notifications for sipgate
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/simonkub/laravel-sipgate-notifications.svg?style=flat-square)](https://packagist.org/packages/simonkub/laravel-sipgate-notifications)
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/simonkub/laravel-sipgate-notifications/master.svg?style=flat-square)](https://travis-ci.org/simonkub/laravel-sipgate-notifications)
-[![StyleCI](https://styleci.io/repos/210414919/shield)](https://styleci.io/repos/210414919)
-[![Quality Score](https://img.shields.io/scrutinizer/g/simonkub/laravel-sipgate-notifications.svg?style=flat-square)](https://scrutinizer-ci.com/g/simonkub/laravel-sipgate-notifications)
-[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/simonkub/laravel-sipgate-notifications/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/simonkub/laravel-sipgate-notifications/?branch=master)
-[![Total Downloads](https://img.shields.io/packagist/dt/simonkub/laravel-sipgate-notifications.svg?style=flat-square)](https://packagist.org/packages/simonkub/laravel-sipgate-notifications)
+[**Todo: Project Badges**]
 
 This package makes it easy to send notifications using [sipgate](https://sipgate.de) with Laravel 5.5+ and 6.0.
 
@@ -38,7 +32,7 @@ This package makes it easy to send notifications using [sipgate](https://sipgate
 Install the package via composer:
 
 ```bash
-composer require simonkub/laravel-sipgate-notifications
+composer require laravel-notification-channels/sipgate
 ```
 
 ### Setting up the sipgate service
@@ -54,14 +48,14 @@ return [
         'username' => env('SIPGATE_USERNAME'),
         'password' => env('SIPGATE_PASSWORD'),
         'smsId' => env('SIPGATE_SMSID'),
-        'enabled' => env('SIPGATE_NOTIFICATOINS_ENABLED', true),
+        'enabled' => env('SIPGATE_NOTIFICATIONS_ENABLED', true),
     ]
 ];
 ```
 
 Add your sipgate credentials to your `.env`:
 ```bash
-SIPGATE_NOTIFICATOINS_ENABLED=true
+SIPGATE_NOTIFICATIONS_ENABLED=true
 SIPGATE_USERNAME=mail@example.com
 SIPGATE_PASSWORD=1234567890
 SIPGATE_SMSID=s0
