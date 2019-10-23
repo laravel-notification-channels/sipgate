@@ -1,0 +1,54 @@
+{
+    "name": "laravel-notification-channels/sipgate",
+    "description": "Laravel notifications driver for sipgate.de",
+    "homepage": "https://github.com/laravel-notification-channels/sipgate",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "sipgate",
+        "notifications"
+    ],
+    "authors": [
+        {
+            "name": "Simon Kubiak",
+            "email": "mail@simonkubiak.de",
+            "homepage": "https://github.com/simonkub",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "guzzlehttp/guzzle": "^6.3",
+        "illuminate/notifications": "~5.5 || ~6.0",
+        "illuminate/support": "~5.5 || ~6.0",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.2",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NotificationChannels\\Sipgate\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NotificationChannels\\Sipgate\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NotificationChannels\\Sipgate\\SipgateServiceProvider"
+            ]
+        }
+    }
+}
