@@ -1,14 +1,14 @@
 <?php
 
-namespace Simonkub\Laravel\Notifications\Sipgate\Test;
+namespace NotificationChannels\Sipgate\Test;
 
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\TransferException;
 use Mockery;
+use NotificationChannels\Sipgate\Exceptions\CouldNotSendNotification;
+use NotificationChannels\Sipgate\SipgateClient;
+use NotificationChannels\Sipgate\SipgateMessage;
 use PHPUnit\Framework\TestCase;
-use Simonkub\Laravel\Notifications\Sipgate\Exceptions\CouldNotSendNotification;
-use Simonkub\Laravel\Notifications\Sipgate\SipgateClient;
-use Simonkub\Laravel\Notifications\Sipgate\SipgateMessage;
 
 class SipgateClientTest extends TestCase
 {

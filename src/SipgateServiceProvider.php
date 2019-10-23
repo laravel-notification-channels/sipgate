@@ -1,6 +1,6 @@
 <?php
 
-namespace Simonkub\Laravel\Notifications\Sipgate;
+namespace NotificationChannels\Sipgate;
 
 use GuzzleHttp\Client;
 use Illuminate\Contracts\Foundation\Application;

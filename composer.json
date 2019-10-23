@@ -1,7 +1,7 @@
 {
-    "name": "simonkub/laravel-sipgate-notifications",
+    "name": "laravel-notification-channels/sipgate",
     "description": "Laravel notifications driver for sipgate.de",
-    "homepage": "https://github.com/simonkub/laravel-sipgate-notifications",
+    "homepage": "https://github.com/laravel-notification-channels/sipgate",
     "license": "MIT",
     "type": "library",
     "keywords": [
@@ -30,12 +30,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Simonkub\\Laravel\\Notifications\\Sipgate\\": "src"
+            "NotificationChannels\\Sipgate\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Simonkub\\Laravel\\Notifications\\Sipgate\\Test\\": "tests"
+            "NotificationChannels\\Sipgate\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -47,7 +47,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Simonkub\\Laravel\\Notifications\\Sipgate\\SipgateServiceProvider"
+                "NotificationChannels\\Sipgate\\SipgateServiceProvider"
             ]
         }
     }

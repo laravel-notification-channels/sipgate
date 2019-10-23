@@ -1,6 +1,6 @@
 <?php
 
-namespace Simonkub\Laravel\Notifications\Sipgate\Exceptions;
+namespace NotificationChannels\Sipgate\Exceptions;
 
 use Exception;
 use GuzzleHttp\Exception\GuzzleException;

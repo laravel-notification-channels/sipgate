@@ -1,11 +1,11 @@
 <?php
 
-namespace Simonkub\Laravel\Notifications\Sipgate\Test;
+namespace NotificationChannels\Sipgate\Test;
 
 use Illuminate\Contracts\Support\Arrayable;
 use JsonSerializable;
 use PHPUnit\Framework\TestCase;
-use Simonkub\Laravel\Notifications\Sipgate\SipgateMessage;
+use NotificationChannels\Sipgate\SipgateMessage;
 
 class SipgateMessageTest extends TestCase
 {
