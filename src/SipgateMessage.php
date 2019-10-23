@@ -19,12 +19,20 @@ class SipgateMessage implements Arrayable, JsonSerializable
     /** @var int */
     protected $sendAt;
 
-    public function __construct($message = '')
+    /**
+     * SipgateMessage constructor.
+     * @param  string  $message
+     */
+    public function __construct(string $message = '')
     {
         $this->message = $message;
     }
 
-    public static function create($message = '')
+    /**
+     * @param  string  $message
+     * @return static
+     */
+    public static function create(string $message = '')
     {
         return new static($message);
     }
