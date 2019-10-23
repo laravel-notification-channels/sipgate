@@ -70,7 +70,7 @@ class SipgateClientTest extends TestCase
     {
         return [
             self::SMS_ENDPOINT,
-            ['json' => $this->message->toArray()],
+            ['json' => $this->message],
         ];
     }
 

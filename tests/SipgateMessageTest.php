@@ -3,6 +3,7 @@
 namespace Simonkub\Laravel\Notifications\Sipgate\Test;
 
 use Illuminate\Contracts\Support\Arrayable;
+use JsonSerializable;
 use PHPUnit\Framework\TestCase;
 use Simonkub\Laravel\Notifications\Sipgate\SipgateMessage;
 
@@ -27,6 +28,14 @@ class SipgateMessageTest extends TestCase
         $message = SipgateMessage::create();
 
         $this->assertInstanceOf(Arrayable::class, $message);
+    }
+
+    /** @test */
+    public function it_is_json_serializable()
+    {
+        $message = SipgateMessage::create();
+
+        $this->assertInstanceOf(JsonSerializable::class, $message);
     }
 
     /** @test */

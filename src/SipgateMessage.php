@@ -3,8 +3,9 @@
 namespace Simonkub\Laravel\Notifications\Sipgate;
 
 use Illuminate\Contracts\Support\Arrayable;
+use JsonSerializable;
 
-class SipgateMessage implements Arrayable
+class SipgateMessage implements Arrayable, JsonSerializable
 {
     /** @var string */
     protected $message;
@@ -105,6 +106,9 @@ class SipgateMessage implements Arrayable
         return $this;
     }
 
+    /**
+     * @return array
+     */
     public function toArray()
     {
         return [
@@ -113,5 +117,13 @@ class SipgateMessage implements Arrayable
             'smsId' => $this->smsId,
             'sendAt' => $this->sendAt,
         ];
+    }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize()
+    {
+        return $this->toArray();
     }
 }

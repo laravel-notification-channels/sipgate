@@ -29,7 +29,7 @@ class SipgateClient
     public function send(SipgateMessage $message)
     {
         try {
-            $this->http->post('sessions/sms', ['json' => $message->toArray()]);
+            $this->http->post('sessions/sms', ['json' => $message]);
         } catch (GuzzleException $exception) {
             throw CouldNotSendNotification::connectionFailed($exception);
         }
