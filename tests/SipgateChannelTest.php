@@ -5,11 +5,11 @@ namespace NotificationChannels\Sipgate\Test;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Notifications\Notification;
 use Mockery;
-use PHPUnit\Framework\TestCase;
 use NotificationChannels\Sipgate\Exceptions\CouldNotSendNotification;
 use NotificationChannels\Sipgate\SipgateChannel;
 use NotificationChannels\Sipgate\SipgateClient;
 use NotificationChannels\Sipgate\SipgateMessage;
+use PHPUnit\Framework\TestCase;
 
 class SipgateChannelTest extends TestCase
 {

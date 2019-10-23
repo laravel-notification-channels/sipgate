@@ -4,8 +4,8 @@ namespace NotificationChannels\Sipgate\Test;
 
 use Illuminate\Contracts\Support\Arrayable;
 use JsonSerializable;
-use PHPUnit\Framework\TestCase;
 use NotificationChannels\Sipgate\SipgateMessage;
+use PHPUnit\Framework\TestCase;
 
 class SipgateMessageTest extends TestCase
 {
