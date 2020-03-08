@@ -41,7 +41,7 @@ class SipgateServiceProvider extends ServiceProvider
                         'Accept' => 'application/json',
                         'Content-Type' => 'application/json',
                         'X-Sipgate-Client' => 'github.com/laravel-notification-channels/sipgate',
-                        'X-Sipgate-Version' => '1.3.0'
+                        'X-Sipgate-Version' => '1.3.0',
                     ],
                 ])
             );
