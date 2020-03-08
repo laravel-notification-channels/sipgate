@@ -8,7 +8,7 @@
 [![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/laravel-notification-channels/sipgate/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/laravel-notification-channels/sipgate/?branch=master)
 [![Total Downloads](https://img.shields.io/packagist/dt/laravel-notification-channels/sipgate.svg?style=flat-square)](https://packagist.org/packages/laravel-notification-channels/sipgate)
 
-This package makes it easy to send notifications using [sipgate](https://sipgate.de) with Laravel 5.5+ and 6.0.
+This package makes it easy to send notifications using [sipgate](https://sipgate.de) with Laravel 5.5+, 6.X and 7.
 
 ## Contents
 
