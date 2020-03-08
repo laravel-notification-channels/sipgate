@@ -55,7 +55,7 @@ return [
         'password' => env('SIPGATE_PASSWORD'),
         'smsId' => env('SIPGATE_SMSID'),
         'enabled' => env('SIPGATE_NOTIFICATIONS_ENABLED', true),
-    ]
+    ],
 ];
 ```
 
